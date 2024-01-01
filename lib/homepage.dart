@@ -78,7 +78,7 @@ class _HomePageState extends State<HomePage> {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(25.0),
               ),
-              margin:  EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
+              margin: const  EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
               child: ListTile(
                 title: Text(
                   tasks[index].title,
