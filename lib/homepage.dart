@@ -66,23 +66,23 @@ class _HomePageState extends State<HomePage> {
       ),
       
       body: Container(
-        color:const Color.fromARGB(255, 20, 19, 19), // Set the background color to black
+        color:const Color.fromARGB(255, 20, 19, 19), // Setting the background color to black
         // ...
 
         child: ListView.builder(
           itemCount: tasks.length,
           itemBuilder: (context, index) {
             return Card(
-              color: const Color(0xFF3E3C3C), // Dark Grayish-Blue
+              color: const Color(0xFF3E3C3C), 
               elevation: 4,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(25.0),
               ),
-              margin: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
+              margin:  EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
               child: ListTile(
                 title: Text(
                   tasks[index].title,
-                  style: const TextStyle(color: Colors.white), // White text color
+                  style: const TextStyle(color: Colors.white), 
                 ),
                 leading: InkWell(
                   onTap: () {
